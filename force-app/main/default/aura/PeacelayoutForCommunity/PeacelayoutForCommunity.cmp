@@ -1,0 +1,21 @@
+<aura:component implements="forceCommunity:layout" access="global">
+    <aura:attribute name="col1" type="Aura.Component[]"/>
+    <aura:attribute name="col2" type="Aura.Component[]"/>
+    <aura:attribute name="col3" type="Aura.Component[]"/>
+    <aura:attribute name="col4" type="Aura.Component[]"/>
+    
+    <div class="slds-grid slds-gutters">
+        <div class="slds-col">
+        	<span>{!v.col1}</span>
+        </div>
+        <div class="slds-col">
+        	<span>{!v.col2}</span>
+        </div>
+        <div class="slds-col">
+        	<span>{!v.col3}</span>
+        </div>
+        <div class="slds-col">
+        	<span>{!v.col4}</span>
+        </div>
+    </div>
+</aura:component>

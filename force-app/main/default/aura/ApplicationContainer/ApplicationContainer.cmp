@@ -1,0 +1,9 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <aura:attribute name="id" type="integer" />
+    <aura:handler phase="bubble" event="c:MessageApplicationEvent" action="{!c.handleGetMessageEvent}"/>
+    <div class="slds-box borderBlue" >
+        Id in ApplicationController : {!v.id}
+        <lightning:button label="Get Message" onclick="{!c.callEvent}" variant="brand" name="getMessage"/>
+    </div>
+    
+</aura:component>

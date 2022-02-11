@@ -1,0 +1,11 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+	<aura:attribute name="id" type="integer" />
+    <aura:attribute name="message" type="string" default="None"/>
+    <aura:handler phase="bubble" event="c:MessageApplicationEvent" action="{!c.handleGetMessageEvent1}"/>
+    
+    <div class="slds-box">
+        Application Parent Component with Id : {!v.id} and with Message : {!v.message}
+        <c:ApplicationContainer id="{!v.id}" />
+    </div>
+    
+</aura:component>

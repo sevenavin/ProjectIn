@@ -1,0 +1,15 @@
+<aura:component >
+    <aura:attribute type="decimal" default='0' name='totalIncomeFromEvent'/>
+    <aura:handler action="{!c.displayValues}" event="c.totalIncomeEvent" name="totalEvent"/>
+    Container
+    <div border="1px">
+        Calculator
+        <c:IncomeCalculatorInnerContainer >
+    		<c:IncomeCalculatorDatatableComponent />
+        </c:IncomeCalculatorInnerContainer>
+        Calculator        
+    </div>
+    Container
+    <br/>
+    <span class="slds-text-heading_large">Total Income : {!v.totalIncomeFromEvent}</span>
+</aura:component>

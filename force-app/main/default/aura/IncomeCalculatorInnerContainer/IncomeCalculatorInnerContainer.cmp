@@ -1,0 +1,8 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+	<aura:handler action="{!c.displayValue}" event="c.totalIncomeEvent" name="totalEvent" includeFacets="true"/>
+    I open
+    <div class="blueRed">
+    	{!v.body}
+    </div>
+    I close
+</aura:component>
